@@ -1,0 +1,22 @@
+{
+  "message": "Ok",
+  "plant": {
+    "id": 3,
+    "name": "Mustafo",
+    "latin_name": "hfhfhhfhfhfhf",
+    "family": " Капустные",
+    "family_decription": "frfrfrfr",
+    "description": "frfrfrfr",
+    "habitat": "rfdsfdvfdcsdfv",
+    "medicinal_uses": "sdfvsfdvsfd sfdv fdv sfvjlkjkjksdfjhjfjnvnkjsfndm",
+    "image": "https://tualatinswcd.org/wp-content/uploads/2022/07/StJohnsWortFlower01Small_TSWCD.png"
+  },
+  "locations": [
+    {
+      "location_id": 2,
+      "region": "Ёвон",
+      "description": "Аммо ман туро гуфтам ки чаро ки "
+    }
+  ],
+  "chemical: "Химическое соединение не добавлено"
+}
