@@ -22,7 +22,7 @@ app.use(express.static("public"));
 // );
 app.use(
   cors({
-    origin: "https://frontend-plants.vercel.app/", // Разрешить только этот домен
+    origin: "https://frontend-plants.vercel.app", // Разрешить только этот домен
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type",
   })
