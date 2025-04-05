@@ -54,9 +54,36 @@
       button:hover {
         background: #218838;
       }
+      nav {
+      background-color: #2a6f97;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #cce3f2;
+    }
     </style>
   </head>
   <body>
+    <nav>
+    <a href="/">Главная</a>
+    <a href="https://frontend-plants.vercel.app/">Страница растений</a>
+    <a href="/about">О приложение</a>
+    <a href="/contact">Контакты</a>
+  </nav>
     <div class="container">
       <h2>Добавить данные</h2>
 
@@ -177,7 +204,7 @@
 
       async function getFamilies() {
         try {
-          const res = await fetch("http://localhost:3000/families");
+          const res = await fetch("https://backend-plants-five.vercel.app/families");
 
           const { data, message } = await res.json();
           console.log(data, message);
@@ -196,7 +223,7 @@
 
       async function getPlants() {
         try {
-          const res = await fetch("http://localhost:3000/plants");
+          const res = await fetch("https://backend-plants-five.vercel.app/plants");
 
           const { data, message } = await res.json();
           console.log(data, message);
@@ -219,7 +246,7 @@
 
       async function getlocation() {
         try {
-          const res = await fetch("http://localhost:3000/locations");
+          const res = await fetch("https://backend-plants-five.vercel.app/locations");
 
           const { data, message } = await res.json();
           console.log(data, message);
@@ -238,7 +265,7 @@
 
       async function getChemical() {
         try {
-          const res = await fetch("http://localhost:3000/chem_comps");
+          const res = await fetch("https://backend-plants-five.vercel.app/chem_comps");
 
           const { data, message } = await res.json();
           console.log(data, message);

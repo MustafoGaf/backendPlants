@@ -37,9 +37,9 @@ app.get("/about", function (req, res) {
   res.sendFile(path.join(__dirname, "..", "components", "about.html"));
 });
 
-app.get("/uploadUser", function (req, res) {
+app.get("/contact", function (req, res) {
   res.sendFile(
-    path.join(__dirname, "..", "components", "user_upload_form.html")
+    path.join(__dirname, "..", "components", "contact.html")
   );
 });
 app.get("/addnew", function (req, res) {
